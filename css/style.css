@@ -481,13 +481,27 @@ ol {
   transition: all 0.4s ease 0s;
 }
 
-.portfolio-item .pi-inner h2 {
+.portfolio-item .pi-inner h3 {
   opacity: 0;
   font-size: 30px;
   font-weight: 400;
   position: absolute;
   left: 50px;
-  bottom: 50px;
+  bottom: 150px;
+  color: #fff;
+  letter-spacing: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.portfolio-item .pi-inner p {
+  opacity: 0;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
   color: #fff;
   letter-spacing: 10px;
   -webkit-transition: all 0.3s ease 0s;
@@ -499,7 +513,12 @@ ol {
   background: rgba(0, 20, 24, 0.8);
 }
 
-.portfolio-item:hover .pi-inner h2 {
+.portfolio-item:hover .pi-inner h3 {
+  opacity: 1;
+  letter-spacing: 0;
+}
+
+.portfolio-item:hover .pi-inner p {
   opacity: 1;
   letter-spacing: 0;
 }
@@ -508,9 +527,13 @@ ol {
   padding-bottom: 45px;
 }
 
-.portfolio-meta h2 {
+.portfolio-meta h3 {
   font-size: 24px;
 }
+
+/*.portfolio-meta p {
+  font-size: 15px;
+}*/
 
 .portfolio-meta p {
   font-size: 14px;
@@ -591,11 +614,11 @@ ol {
   margin-top: 15px;
 }
 
-.milestone h2 {
+.milestone h3 {
   font-size: 60px;
 }
 
-.milestone h2 span {
+.milestone h3 span {
   font-size: 18px;
   color: #979797;
 }
