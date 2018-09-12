@@ -88,6 +88,25 @@ ol {
 }
 */
 
+
+.client-bg {
+  display:block;
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.box-techmate {
+  width: 15em;
+  border-style: solid;
+  border:; 4px;
+  color: black;
+  position: absolute;
+  text-align: center;
+  top: 130%;
+  left: 50%;
+}
+
+
 /*------------------------
   Helper css
 --------------------------*/
